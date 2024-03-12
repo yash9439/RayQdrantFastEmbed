@@ -14,7 +14,8 @@ This repository contains code to demonstrate the usage of Ray distributed comput
 You can install the required libraries using pip:
 
 ```bash
-pip install PyPDF2 nltk ray fastembed qdrant-client
+pip install PyPDF2 nltk fastembed qdrant-client[fastembed]
+pip install -U "ray[data,train,tune,serve]"
 ```
 
 ## Usage
@@ -24,10 +25,19 @@ pip install PyPDF2 nltk ray fastembed qdrant-client
    Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   [git clone https://github.com/yash9439/your-repo.git](https://github.com/yash9439/RayQdrantFastEmbed.git)
+   ```
+   
+2. **Start Docker Environment:**
+
+   Open the `RayQdrant.ipynb` file using Jupyter Notebook:
+
+   ```bash
+   sudo docker pull qdrant/qdrant
+   sudo docker run -p 6333:6333 -p 6334:6334 -v $(pwd)/qdrant_storage:/qdrant/storage:z qdrant/qdrant
    ```
 
-2. **Run Jupyter Notebook:**
+3. **Run Jupyter Notebook:**
 
    Open the `RayQdrant.ipynb` file using Jupyter Notebook:
 
@@ -37,7 +47,7 @@ pip install PyPDF2 nltk ray fastembed qdrant-client
 
    Execute each cell in the notebook sequentially to run the code. Ensure you have the necessary dependencies installed.
 
-3. **Interpret Results:**
+4. **Interpret Results:**
 
    After running the notebook, you will see the time taken for embedding generation using Ray distributed computing. Additionally, you'll get the results of similarity search queries using Qdrant.
 
