@@ -25,7 +25,7 @@ pip install -U "ray[data,train,tune,serve]"
    Clone this repository to your local machine:
 
    ```bash
-   [git clone https://github.com/yash9439/your-repo.git](https://github.com/yash9439/RayQdrantFastEmbed.git)
+   git clone https://github.com/yash9439/RayQdrantFastEmbed.git
    ```
    
 2. **Start Docker Environment:**
