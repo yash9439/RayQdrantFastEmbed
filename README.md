@@ -48,6 +48,6 @@ pip install PyPDF2 nltk ray fastembed qdrant-client
 
 ## License
 
-This code is provided under the [MIT License](LICENSE).
+This code is provided under the Apache License 2.0.
 
 Feel free to modify and distribute it as needed. If you find any issues or have suggestions for improvements, please feel free to open an issue or create a pull request.
